@@ -36,6 +36,56 @@ plt.show()
 
 '''
 noise, clean wave 파일 생성
+(5배 늘림)
 '''
 makeWaveFile(np.repeat(f, 5), sRate, len(array_x)*5, 'noise')
 makeWaveFile(np.repeat(f_clean, 5), sRate, len(array_x)*5, 'clean')
+
+#%% FFT 수행
+
+n = len(array_x)
+'''
+fft 수행
+'''
+fft_noise = np.fft.fft(f, n) # 노이즈 데이터 fft 수행
+
+'''
+fft 결과 정리
+'''
+# 1. 결과를 절대값으로 바꿔줌
+# 2. fft 연산의 결과는 복소수
+# 3. a + bi 의 절대값은 sqrt(a^2 + b^2)
+# 4. a^2 + b^2 = 복소수 * 켤레복소수(a+bi) * (a-bi)
+fft_v = fft_noise * np.conj(fft_noise) / n # 절대값 변환 후 n으로 나눠서 정규화
+
+'''
+진동수로 정의역 정의
+'''
+# 최대 진동수 = 전체 샘플 수 / 2 (sin 함수 절반) 
+freq = np.arange(n//2)
+
+# 그래프 작성
+plt.plot(freq, fft_v[:n//2])
+plt.xlim(freq[0], freq[-1])
+plt.show()
+
+
+'''
+noise 필터링
+'''
+# 진동수 밀도가 100 이상인 값만 필터링
+indices = fft_v > 100
+fft_filter = fft_noise * indices
+# 푸리에 역변환
+ifft = np.fft.ifft(fft_filter)
+
+# 그래프 작성
+plt.plot(array_x, f_clean, color='c', linewidth=2, label='Clean')
+plt.plot(array_x, ifft, color='k', linewidth=1, label='Filter')
+plt.xlim(array_x[0], array_x[-1])
+plt.show()
+
+'''
+필터 wav 파일 생성
+'''
+makeWaveFile(np.repeat(ifft, 5), sRate, n*5, 'filter')
