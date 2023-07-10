@@ -1,6 +1,10 @@
 # fast-fourier-transform
 파이썬으로 소리 처리하기 연습(~푸리에변환)
 
+- 1. Clean Sound <br> ![sound](https://github.com/haZuny/fast-fourier-transform/raw/main/3.%20remove%20noise%20using%20fft/clean.wav)
+  2. Noise Sound <br> ![sound](https://github.com/haZuny/fast-fourier-transform/raw/main/3.%20remove%20noise%20using%20fft/noise.wav)
+  3. Filtered Sound <br> ![sound](https://github.com/haZuny/fast-fourier-transform/raw/main/3.%20remove%20noise%20using%20fft/filter.wav)
+
 ![슬라이드6](https://github.com/haZuny/fast-fourier-transform/assets/64102831/e032b9ee-0883-4c39-aef1-eb8652e87625)
 ![슬라이드7](https://github.com/haZuny/fast-fourier-transform/assets/64102831/a80e1144-5c20-4e4a-8134-12ffc09dcd05)
 ![슬라이드8](https://github.com/haZuny/fast-fourier-transform/assets/64102831/b600c71a-8ac8-4052-9bab-f08c8fee09d7)
