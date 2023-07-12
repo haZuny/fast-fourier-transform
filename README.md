@@ -1,7 +1,7 @@
 # fast-fourier-transform
 파이썬으로 소리 처리하기 연습(~푸리에변환)
 
-# 3. 잡음 제거(인공적으로 만든 잡음 제거)
+## 3. 잡음 제거(인공적으로 만든 잡음 제거)
 1. Clean Sound
 
 https://github.com/haZuny/fast-fourier-transform/assets/64102831/f0baafbf-7fa8-4940-9bb3-f9036c78c9be
@@ -14,7 +14,14 @@ https://github.com/haZuny/fast-fourier-transform/assets/64102831/69020ee8-2065-4
 
 https://github.com/haZuny/fast-fourier-transform/assets/64102831/e474f9ee-b1ac-4c89-9a27-c63e19f15e53
 
+## 4. 실제 클락션 소리 필터링(FFT로 잡음 제거 시도했으나 실패, 추후 SFFT로 잡음 제거 시도
+1. 원본 클락션 소리
 
+https://github.com/haZuny/fast-fourier-transform/assets/64102831/79964603-a69a-4221-9900-3b040c3b1bf5
+
+2. 노이즈 제거 클락션 소리
+3. 
+https://github.com/haZuny/fast-fourier-transform/assets/64102831/6cbe02a6-c61c-4946-b850-471b376471ab
 
 ![슬라이드6](https://github.com/haZuny/fast-fourier-transform/assets/64102831/e032b9ee-0883-4c39-aef1-eb8652e87625)
 ![슬라이드7](https://github.com/haZuny/fast-fourier-transform/assets/64102831/a80e1144-5c20-4e4a-8134-12ffc09dcd05)
