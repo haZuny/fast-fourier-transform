@@ -1,6 +1,7 @@
 # fast-fourier-transform
 파이썬으로 소리 처리하기 연습(~푸리에변환)
 
+# 3. 잡음 제거(인공적으로 만든 잡음 제거)
 1. Clean Sound
 
 https://github.com/haZuny/fast-fourier-transform/assets/64102831/f0baafbf-7fa8-4940-9bb3-f9036c78c9be
