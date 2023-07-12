@@ -17,11 +17,11 @@ https://github.com/haZuny/fast-fourier-transform/assets/64102831/e474f9ee-b1ac-4
 ## 4. 실제 클락션 소리 필터링(FFT로 잡음 제거 시도했으나 실패, 추후 SFFT로 잡음 제거 시도)
 1. 원본 클락션 소리
 
-https://github.com/haZuny/fast-fourier-transform/assets/64102831/79964603-a69a-4221-9900-3b040c3b1bf5
+https://github.com/haZuny/fast-fourier-transform/assets/64102831/0d4166f6-e0aa-460e-9453-b764bd28fe67
 
 2. 노이즈 제거 클락션 소리
 
-https://github.com/haZuny/fast-fourier-transform/assets/64102831/6cbe02a6-c61c-4946-b850-471b376471ab
+https://github.com/haZuny/fast-fourier-transform/assets/64102831/aee6f7d6-f9dd-407b-abab-f53734ee81ee
 
 ![슬라이드6](https://github.com/haZuny/fast-fourier-transform/assets/64102831/e032b9ee-0883-4c39-aef1-eb8652e87625)
 ![슬라이드7](https://github.com/haZuny/fast-fourier-transform/assets/64102831/a80e1144-5c20-4e4a-8134-12ffc09dcd05)
