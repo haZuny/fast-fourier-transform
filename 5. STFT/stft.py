@@ -64,20 +64,25 @@ from scipy import signal
 # f: 주파수, t: 타임, Zxx: stft 결과
 f, t, Zxx = signal.stft(sin_concat, 1000, nperseg=1000)
 
+# 그래프
 plt.pcolormesh(t, f, np.abs(Zxx))
 plt.ylim([0,200])
 plt.show()
 
+# 필터링
 filtered = np.abs(Zxx) > 0.1
-
 Zxx = filtered * Zxx
 
+
+# 그래프 - 필터링 푸리에
 plt.pcolormesh(t, f, np.abs(Zxx))
 plt.ylim([0,200])
 plt.show()
 
+# 역푸리에
 it, filtered = signal.istft(Zxx, 1000)
 
+# 그래프
 plt.figure(figsize=(12,5))
 plt.plot(it, filtered)
 plt.grid()

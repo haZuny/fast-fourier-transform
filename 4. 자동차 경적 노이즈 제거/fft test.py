@@ -61,7 +61,7 @@ plt.show()
 noise 필터링
 '''
 # 진동수 밀도가 100 이상인 값만 필터링
-indices = fft_nomalize > 0.01
+indices = fft_nomalize > 0.1
 fft_filter = fft_noise * indices
 # 푸리에 역변환
 ifft = np.fft.ifft(fft_filter)
