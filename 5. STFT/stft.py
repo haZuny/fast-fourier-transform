@@ -42,8 +42,6 @@ Y = Y_origin[:n//2]
 
 # fft 그래프
 plt.plot(freq, abs(Y), 'r') 
-plt.set_xlabel('Freq (Hz)')
-plt.set_ylabel('|Y(freq)|')
 plt.show()
 
 # 필터링
@@ -59,3 +57,30 @@ plt.show()
 
 # 소리 파일 생성
 make_wave_from_np.makeWaveFile(filtered, 1000, n, "filtered")
+
+# STFT
+from scipy import signal
+
+# f: 주파수, t: 타임, Zxx: stft 결과
+f, t, Zxx = signal.stft(sin_concat, 1000, nperseg=1000)
+
+plt.pcolormesh(t, f, np.abs(Zxx))
+plt.ylim([0,200])
+plt.show()
+
+filtered = np.abs(Zxx) > 0.1
+
+Zxx = filtered * Zxx
+
+plt.pcolormesh(t, f, np.abs(Zxx))
+plt.ylim([0,200])
+plt.show()
+
+it, filtered = signal.istft(Zxx, 1000)
+
+plt.figure(figsize=(12,5))
+plt.plot(it, filtered)
+plt.grid()
+plt.show()
+
+make_wave_from_np.makeWaveFile(filtered, 1000, n, "stft-filtered")
