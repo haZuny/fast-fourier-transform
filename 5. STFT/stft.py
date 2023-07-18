@@ -17,7 +17,7 @@ sin3 = sin_wave(4, 180, time)
 # 파동 연결 + 노이즈 추가
 sin_sum = sin1 + sin2 + sin3
 sin_concat = np.concatenate((sin1, sin2, sin3, sin_sum))
-sin_concat = sin_concat + np.random.rand(len(sin_concat))
+sin_concat = sin_concat + np.random.rand(len(sin_concat))*1.5
 
 # 소리 파일 생성
 make_wave_from_np.makeWaveFile(sin_concat, 1000, len(sin_concat), "origin")
@@ -62,9 +62,9 @@ make_wave_from_np.makeWaveFile(filtered, 1000, n, "filtered")
 from scipy import signal
 
 # f: 주파수, t: 타임, Zxx: stft 결과
-f, t, Zxx = signal.stft(sin_concat, 1000, nperseg=1000)
+f, t, Zxx = signal.stft(sin_concat, 1000)
 
-# 그래프
+# 그래프S
 plt.pcolormesh(t, f, np.abs(Zxx))
 plt.ylim([0,200])
 plt.show()
@@ -84,7 +84,8 @@ it, filtered = signal.istft(Zxx, 1000)
 
 # 그래프
 plt.figure(figsize=(12,5))
-plt.plot(it, filtered)
+plt.plot(np.arange(len(sin_concat))/1000, sin_concat, color = 'c')
+plt.plot(it, filtered, color = 'black')
 plt.grid()
 plt.show()
 

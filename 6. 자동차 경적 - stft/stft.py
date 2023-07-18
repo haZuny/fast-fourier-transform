@@ -39,7 +39,7 @@ plt.show()
 noise 필터링
 '''
 # 진동수 밀도가 100 이상인 값만 필터링
-indices = np.abs(Zxx) > 1000
+indices = np.abs(Zxx) > 700
 print(max(Zxx[0]))
 filtered = indices * Zxx
 
