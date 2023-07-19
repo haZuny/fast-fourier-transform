@@ -23,13 +23,15 @@ https://github.com/haZuny/fast-fourier-transform/assets/64102831/0d4166f6-e0aa-4
 
 https://github.com/haZuny/fast-fourier-transform/assets/64102831/aee6f7d6-f9dd-407b-abab-f53734ee81ee
 
+<br><br>
 
+# 푸리에 변환 정리
 <details>
-  <summary>접기/펼치기</summary>
+  <summary>PPT1</summary>
   
-![슬라이드6](https://github.com/haZuny/fast-fourier-transform/assets/64102831/e032b9ee-0883-4c39-aef1-eb8652e87625)
+  ![슬라이드6](https://github.com/haZuny/fast-fourier-transform/assets/64102831/e032b9ee-0883-4c39-aef1-eb8652e87625)
 
-![슬라이드7](https://github.com/haZuny/fast-fourier-transform/assets/64102831/a80e1144-5c20-4e4a-8134-12ffc09dcd05)
+  ![슬라이드7](https://github.com/haZuny/fast-fourier-transform/assets/64102831/a80e1144-5c20-4e4a-8134-12ffc09dcd05)
 
   ![슬라이드8](https://github.com/haZuny/fast-fourier-transform/assets/64102831/b600c71a-8ac8-4052-9bab-f08c8fee09d7)
   ![슬라이드9](https://github.com/haZuny/fast-fourier-transform/assets/64102831/71856166-a731-4a3b-97c7-73c8e459561f)
