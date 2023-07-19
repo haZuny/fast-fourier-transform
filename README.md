@@ -26,8 +26,11 @@ https://github.com/haZuny/fast-fourier-transform/assets/64102831/aee6f7d6-f9dd-4
 
 <details>
   <summary>접기/펼치기</summary>
+  
 ![슬라이드6](https://github.com/haZuny/fast-fourier-transform/assets/64102831/e032b9ee-0883-4c39-aef1-eb8652e87625)
+
 ![슬라이드7](https://github.com/haZuny/fast-fourier-transform/assets/64102831/a80e1144-5c20-4e4a-8134-12ffc09dcd05)
+
   ![슬라이드8](https://github.com/haZuny/fast-fourier-transform/assets/64102831/b600c71a-8ac8-4052-9bab-f08c8fee09d7)
   ![슬라이드9](https://github.com/haZuny/fast-fourier-transform/assets/64102831/71856166-a731-4a3b-97c7-73c8e459561f)
   ![슬라이드10](https://github.com/haZuny/fast-fourier-transform/assets/64102831/6ae98ef1-54bd-47ef-b1ba-a17c704631fe)
